@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org).
 
 ## [v0.1.0] - 2024-07-02
 ### Added
-- First release 
+- First release
+- SlickModuleInterface, WebModuleInterface and ConsoleModuleInterface
+- Basic implementations for Module and middleware handler.
 
 [Unreleased]: https://github.com/slickframework/module-api/compare/v0.1.0...HEAD
-[v0.1.0]: https://github.com/slickframework/module-api/compare/2d2872...v0.1.0
+[v0.1.0]: https://github.com/slickframework/module-api/compare/9efd6e...v0.1.0
