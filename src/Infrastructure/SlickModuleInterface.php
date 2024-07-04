@@ -47,4 +47,20 @@ interface SlickModuleInterface
      * @return string|null
      */
     public function description(): ?string;
+
+    /**
+     * Called whenever the module is enabled
+     *
+     * @param array<string, mixed> $context
+     * @return void
+     */
+    public function onEnable(array $context = []): void;
+
+    /**
+     * Handle the event when the module is disabled
+     *
+     * @param array<string, mixed> $context
+     * @return void
+     */
+    public function onDisable(array $context = []): void;
 }

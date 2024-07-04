@@ -3,7 +3,7 @@
     "description": "Interfaces required to develop a Slick module",
     "type": "library",
     "license": "MIT",
-    "version": "v0.1.0",
+    "version": "v0.2.0",
     "autoload": {
         "psr-4": {
             "Slick\\ModuleApi\\": "src/"

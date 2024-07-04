@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
+## [v0.2.0] - 2024-07-04
+### Added
+- Modules now can listen to `onEnable` and `onDisable` events.
+
 ## [v0.1.0] - 2024-07-02
 ### Added
 - First release

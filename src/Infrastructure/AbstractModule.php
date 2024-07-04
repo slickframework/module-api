@@ -69,6 +69,22 @@ abstract class AbstractModule implements FrontController\WebModuleInterface, Con
     }
 
     /**
+     * @inheritDoc
+     */
+    public function onEnable(array $context = []): void
+    {
+
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function onDisable(array $context = []): void
+    {
+
+    }
+
+    /**
      * Convert a camel case string to snake case.
      *
      * @param string $camelCase The camel case string to convert.
