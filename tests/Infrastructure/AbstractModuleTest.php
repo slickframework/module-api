@@ -56,4 +56,13 @@ class AbstractModuleTest extends TestCase
         $module->configureConsole($this->prophesize(Application::class)->reveal());
         $this->assertEquals([], $module->middlewareHandlers());
     }
+
+    #[Test]
+    public function events(): void
+    {
+        $module = new DummyModule();
+        $module->onDisable();
+        $module->onEnable();
+        $this->assertInstanceOf(AbstractModule::class, $module);
+    }
 }

@@ -6,12 +6,3 @@ services:
     environment:
       - USE_XDEBUG=yes
       - XDEBUG_MODE=develop,debug,coverage
-
-  sonarqube:
-    platform: linux/amd64
-    image: sonarsource/sonar-scanner-cli
-    volumes:
-      - ./:/usr/src
-    environment:
-      - SONAR_HOST_URL=http://sonarqube.fsilva.info
-      - SONAR_TOKEN=sqp_41439d6b5c6ce96a8ff08d22475e4fe4cebdb946

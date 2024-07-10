@@ -3,8 +3,7 @@
 [![Latest Version](https://img.shields.io/github/release/slickframework/module-api.svg?style=flat-square)](https://github.com/slickframework/module-api/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/slickframework/module-api/continuous-integration.yml?style=flat-square)](https://github.com/slickframework/module-api/actions/workflows/continuous-integration.yml)
-[![Quality Score](https://img.shields.io/scrutinizer/g/slickframework/module-api/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/slickframework/module-api?branch=master)
-[![Quality Gate Status](https://sonarqube.fsilva.info/api/project_badges/measure?project=Module-API&metric=alert_status&token=sqb_ff6906e5897b59ffa8fb726c2b885a942a8fd99e)](https://sonarqube.fsilva.info/dashboard?id=Module-API)
+[![Quality Score](https://img.shields.io/scrutinizer/g/slickframework/module-api/main.svg?style=flat-square)](https://scrutinizer-ci.com/g/slickframework/module-api?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/slick/module-api.svg?style=flat-square)](https://packagist.org/packages/slick/module-api)
 
 `Slick` is a modular framework where nearly all features are implemented as modules. Some modules
