@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased]
 
+## [v0.4.0] - 2024-07-14
+### Adds
+- A Slick `ContainerInterface` container is passed as argument to the
+  `ConsoleModuleInterface::configureConsole()` method to allow dependency container
+  usage on command creations and setup.
+
 ## [v0.3.0] - 2024-07-10
 ### Added
 - array manipulation functions
@@ -23,7 +29,8 @@ and this project adheres to [Semantic Versioning](http://semver.org).
 - SlickModuleInterface, WebModuleInterface and ConsoleModuleInterface
 - Basic implementations for Module and middleware handler.
 
-[Unreleased]: https://github.com/slickframework/module-api/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/slickframework/module-api/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/slickframework/module-api/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/slickframework/module-api/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/slickframework/module-api/compare/v0.1.0...v0.2.0
 [v0.1.0]: https://github.com/slickframework/module-api/compare/9efd6e...v0.1.0

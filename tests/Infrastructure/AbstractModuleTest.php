@@ -12,6 +12,7 @@ use Dotenv\Dotenv;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;
+use Slick\Di\ContainerInterface;
 use Slick\ModuleApi\Infrastructure\AbstractModule;
 use Symfony\Component\Console\Application;
 
@@ -52,8 +53,9 @@ class AbstractModuleTest extends TestCase
     #[Test]
     public function middlewares(): void
     {
+        $container = $this->prophesize(ContainerInterface::class)->reveal();
         $module = new DummyModule();
-        $module->configureConsole($this->prophesize(Application::class)->reveal());
+        $module->configureConsole($this->prophesize(Application::class)->reveal(), $container);
         $this->assertEquals([], $module->middlewareHandlers());
     }
 
