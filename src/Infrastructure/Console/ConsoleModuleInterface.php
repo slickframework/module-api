@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Slick\ModuleApi\Infrastructure\Console;
 
+use Slick\Di\ContainerInterface;
 use Slick\ModuleApi\Infrastructure\SlickModuleInterface;
 use Symfony\Component\Console\Application;
 
@@ -22,5 +23,5 @@ use Symfony\Component\Console\Application;
 interface ConsoleModuleInterface extends SlickModuleInterface
 {
 
-    public function configureConsole(Application $cli): void;
+    public function configureConsole(Application $cli, ContainerInterface $container): void;
 }

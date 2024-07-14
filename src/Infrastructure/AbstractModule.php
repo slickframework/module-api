@@ -12,8 +12,7 @@ declare(strict_types=1);
 namespace Slick\ModuleApi\Infrastructure;
 
 use Dotenv\Dotenv;
-use Slick\ModuleApi\Infrastructure\Console\ConsoleModuleInterface;
-use Slick\ModuleApi\Infrastructure\FrontController\WebModuleInterface;
+use Slick\Di\ContainerInterface;
 use Symfony\Component\Console\Application;
 
 /**
@@ -58,7 +57,7 @@ abstract class AbstractModule implements FrontController\WebModuleInterface, Con
         return null;
     }
 
-    public function configureConsole(Application $cli): void
+    public function configureConsole(Application $cli, ContainerInterface $container): void
     {
         // do nothing: no need to do anything
     }
